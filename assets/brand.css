@@ -1,0 +1,11 @@
+@font-face{font-family:Oxanium;src:url("fonts/Oxanium.woff2") format("woff2");font-weight:500 600;font-style:normal;font-display:swap}
+.signal-brand{display:inline-flex;flex-direction:column;gap:12px;color:inherit;max-width:100%;padding-inline:5px}
+.signal-word{font-family:Oxanium,Arial,sans-serif;font-weight:500;line-height:1.12;letter-spacing:.015em;display:flex;gap:.22em;white-space:nowrap;transform:skewX(-7deg);transform-origin:left bottom}
+.signal-word .start{color:var(--accent,#D9FF64)}
+.signal-caption{display:flex;align-items:center;gap:16px;font-size:14px;font-weight:500;letter-spacing:.46em;line-height:1.5}
+.signal-caption::before{content:"";height:1px;width:32px;background:currentColor;opacity:.65}
+.signal-brand.mono .start{color:inherit}
+.signal-brand.compact{gap:5px;padding-inline:2px}.compact .signal-word{font-size:25px;letter-spacing:0}.compact .signal-caption{font-size:11px;gap:8px;letter-spacing:.25em}.compact .signal-caption::before{width:16px}
+
+/* Approved D wordmark in navigation and footer. */
+@media(max-width:700px){.compact .signal-word{font-size:23px}}
